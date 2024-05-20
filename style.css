@@ -79,18 +79,28 @@ footer {
 
 form {
     margin-left: 2.5rem;
-    align-items: center;
-    text-align:left;
+    width: 644px;
 }
 
-.input-wrapper, .textarea {
-    align-items: start;
-    text-align: left;
+form h1 {
+    margin-left: 1.5rem;
+    margin-top: 4.8rem;
+    margin-bottom: 2.6rem;
 }
+
+mainsecondary {
+    display: flex;
+}
+
+.responsive {
+    display: none;
+    
+}
+
 
 .input-wrapper {
     display: flex;
-    width: 21.7rem;
+    min-width: 21.7rem;
     padding: 0.7rem 1rem 0.7rem 0.8rem;
     align-items: center;
     gap: 12px;
@@ -114,6 +124,7 @@ form {
     flex-shrink: 0;
     margin-top: 2.1rem;
     margin-bottom: 4rem;
+    margin-left: 1.5rem;
 }
 
 .buttonsub {
@@ -151,6 +162,74 @@ form {
     line-height: 100%;
     width: 17rem;
     border: none;
+}
+
+/* media queries */
+@media (min-width: 768px) {
+    main {
+        max-width: 90rem;
+        max-height: 36rem;
+        display: flex;
+    }
+
+    .moonBlue, .moonOrange, .moonPink {
+        max-width: 22.8rem;
+        max-height: 28rem;
+        text-align: center;
+        
+    }
+
+    #nome, #email, #mensagem {
+        min-width: 32.8rem;
+    }
+
+    .input-wrapper, .textarea {
+        max-width: 37rem;
+    }
+    
+    .responsive {
+        display: flex;    
+        width: 44rem;
+        height: 40rem;
+        right: 0;
+        bottom: 0;
+        
+    }
+    
+    header {
+        display: flex;
+        flex-direction: row-reverse; /* Para colocar a imagem à direita no layout padrão */
+        align-items: center;
+        justify-content: flex-end;
+        gap: 2rem;
+    }
+
+    .textheader {
+        margin-left: 6.8rem;
+        text-align: left;
+    }
+
+    .astronauta2 {
+        width: 45rem;
+        height: 45rem;
+        
+        
+    }
+
+    .arrow {
+        text-align: left;
+        margin-top: 11rem;  
+    }
+
+    header h1 {
+        font-size: 58px;
+        font-weight: 900;
+    }
+
+    header p {
+        font-size: 32px;
+        font-weight: 600;
+    }
 }
 
 
